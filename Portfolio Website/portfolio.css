@@ -51,18 +51,50 @@ body {
     padding-left: 24.5%;
   }
 
-  li{
-    display: inline;
-    float: left;
-    border-right: 1px solid white;
+  .sidenav-range{
+    height: 75px;
+    display: block;
   }
 
+  .sidenav{
+    margin: auto;
+    width: 250px;
+    float: left;
+    text-align: center;
+    font-size: 24px;
+  }
+  #JavaScript{
+    margin-bottom: 5px;
+    border: none;
+    background-color: inherit;
+    font-size: inherit;
+    cursor: pointer;
+  }
+  #PHP{
+    margin-bottom: 5px;
+    border: none;
+    background-color: inherit;
+    font-size: inherit;
+    cursor: pointer;
+  }
+  #FullStack{
+    margin-bottom: 5px;
+    border: none;
+    background-color: inherit;
+    font-size: inherit;
+    cursor: pointer;
+  }
+
+
+
   li a {
-    display: block;
+    display: inline-block;
     color: white;
     padding: 10px 15px;
     text-align: center;
     text-decoration: none;
+    border-right: 1px solid white;
+    float: left;
   }
 
   li:last-child {
@@ -73,6 +105,10 @@ body {
     background-color: #111;
   }
 
+  li :hover{
+    color: pink;
+  }
+
   .active {
     background-color: darkcyan;
   }
@@ -81,6 +117,14 @@ img{
   height: auto;
   max-width: 100%;
   max-height: 300px;
+}
+
+@media screen and (max-width: 520px) {
+  .navbar {
+    display: block;
+    max-width: 100%;
+  }
+  
 }
 
 .endangered_animals{
@@ -124,6 +168,19 @@ img{
 }
 
 .hotel_bookings{
+  display: flex;
+  border: #111;
+  border-radius: 3px;
+  border-style: solid;
+  position: relative;
+  text-align: center;
+  margin: auto;
+  width: 750px;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.student_budgets{
   display: flex;
   border: #111;
   border-radius: 3px;
